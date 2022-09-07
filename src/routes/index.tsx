@@ -1,19 +1,21 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
-import Search from '@/layouts/Search'
+import Header from '@/components/header'
 import Favorites from '@/layouts/Favorites'
 import Home from '@/layouts/Home'
+import Search from '@/layouts/Search'
+import React from 'react'
+import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom'
 
-const AppRoute:React.FC = () => {
-  return(
+const AppRoute: React.FC = () => {
+  return (
     <>
+      <Header />
+
       <Router>
         <Routes>
-          <Route path= '/' element = {< Home />} />
-          <Route path= '/search' element = {< Search />} />
-          <Route path = '/favorite' element = {< Favorites />} />
-          <Route path ='*' element={<Navigate to='/' />} />
+          <Route path='/' element={< Home />} />
+          <Route path='/search' element={< Search />} />
+          <Route path='/favorite' element={< Favorites />} />
+          <Route path='*' element={<Navigate to='/' />} />
         </Routes>
       </Router>
     </>
