@@ -1,19 +1,11 @@
+import Mobile from './mobile'
 import './styles.scss'
 
-const Header = () => {
+const Header: React.FC = () => {
+
   return (
-    <div>
-      <nav>
-        <p>OPENWEEKAPPS</p>
-        <ul>
-          <li>Movies</li>
-          <li>Series</li>
-          <li>Trending</li>
-        </ul>
-      </nav>
-    </div>
+    <Mobile />
   )
 }
-
 
 export default Header
