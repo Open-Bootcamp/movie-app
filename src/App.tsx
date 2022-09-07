@@ -1,7 +1,9 @@
+import Header from "@/components/header"
+
 function App() {
   return (
     <div className="App">
-      <h1>Movie Apps</h1>
+      <Header />
     </div>
   )
 }
