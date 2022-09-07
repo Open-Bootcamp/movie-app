@@ -1,0 +1,71 @@
+@import '../../StylesGlobal/base.scss';
+
+.form {
+  .search {
+    &__input {
+      display: flex;
+      position: relative;
+      &__icon {
+        position: absolute;
+        right: 10px;
+        vertical-align: middle;
+      }
+
+      &__content {
+        min-height: 39px;
+        width: 100%;
+        background: #393a3a;
+        border: 1px solid transparent;
+        border-radius: 12px;
+        padding-left: 10px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        color: #fff;
+        opacity: 0.8;
+        transition: border 0.2s ease-in;
+        &:focus {
+          border: 1px solid $colorPrimary;
+          outline: none;
+        }
+        &::placeholder {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          color: #fff;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+.search__input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  gap: 15px;
+  margin-top: 27px;
+  padding: 0 14px;
+}
+
+.search__button {
+  border-radius: 12px;
+  background: #e50914;
+  border: 0;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  opacity: 0.8;
+  padding: 10px 5px 10px 5px;
+}

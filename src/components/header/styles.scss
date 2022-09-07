@@ -1,3 +1,37 @@
+@import url('../../StylesGlobal/base.scss');
+
+// Mobile
 p {
   color: red;
+}
+
+.header > h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #e50914;
+  text-align: center;
+  margin-top: 19px;
+}
+
+.nav {
+  padding: 17px 27px 0;
+
+  &__ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__item {
+    color: #fff;
+    opacity: 0.8;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
