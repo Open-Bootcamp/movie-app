@@ -1,9 +1,12 @@
-import React from 'react'
+import { useParams } from 'react-router';
 
 function Search() {
+
+  const { name } = useParams();
+
   return (
     <>
-      <h1>Busqueda</h1>
+      <h1>{name}</h1>
     </>
   )
 }

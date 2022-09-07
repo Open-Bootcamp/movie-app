@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import { Link } from 'react-router-dom'
 import Search from '../search'
 import './styles.scss'
 
@@ -11,10 +12,12 @@ const Mobile: FC = () => {
           <li className='nav__item'>Movies</li>
           <li className='nav__item'>Series</li>
           <li className='nav__item'>Trending</li>
-          <li className='nav__item'>Favorites</li>
+          <li className='nav__item'>
+            <Link to="/favorite" >Favorites</Link>
+          </li>
         </ul>
       </nav>
-      <Search></Search>
+      <Search />
     </div>
   )
 }

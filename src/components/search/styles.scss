@@ -5,11 +5,6 @@
     &__input {
       display: flex;
       position: relative;
-      &__icon {
-        position: absolute;
-        right: 10px;
-        vertical-align: middle;
-      }
 
       &__content {
         min-height: 39px;
@@ -68,4 +63,18 @@
   line-height: 18px;
   opacity: 0.8;
   padding: 10px 5px 10px 5px;
+}
+
+.search__button__icon {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 10px;
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 768px) {
+  .search__button {
+    display: none;
+  }
 }
