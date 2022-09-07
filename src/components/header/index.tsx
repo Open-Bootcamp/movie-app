@@ -1,10 +1,17 @@
+import { useDevice } from '@/hooks/useDevice'
+import Desktop from './desktop'
 import Mobile from './mobile'
 import './styles.scss'
 
 const Header: React.FC = () => {
 
+  const { isMobile, isDesktop } = useDevice()
+
   return (
-    <Mobile />
+    <>
+      {isMobile && <Mobile />}
+      {isDesktop && <Desktop />}
+    </>
   )
 }
 
