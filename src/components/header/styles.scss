@@ -55,13 +55,14 @@
     gap: 38px;
   }
 
-  .logo {
+  .logo a {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     color: $colorPrimary;
     margin-top: 0;
+    text-decoration: none;
   }
 
   .nav {

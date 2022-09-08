@@ -7,12 +7,20 @@ const Desktop: FC = () => {
   return (
     <div className="header">
       <div className="header__nav">
-        <h1 className='logo'>OPENWEEKAPPS</h1>
+        <h1 className='logo'>
+          <Link to='/'>OPENWEEKAPPS</Link>
+        </h1>
         <nav className="nav">
           <ul className="nav__ul">
-            <li className="nav__item">Películas</li>
-            <li className="nav__item">Series</li>
-            <li className="nav__item">Tendencias</li>
+            <li className="nav__item">
+              <Link to='/peliculas'>Películas</Link>
+            </li>
+            <li className="nav__item">
+              <Link to='/series'>Series</Link>
+            </li>
+            <li className="nav__item">
+              <Link to='/trending'>Tendencias</Link>
+            </li>
           </ul>
         </nav>
       </div>

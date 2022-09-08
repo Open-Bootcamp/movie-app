@@ -10,6 +10,8 @@ const Search: FC = () => {
     e.preventDefault()
 
     navigate(`/search/${e.currentTarget.elements[0].value}`)
+
+    e.currentTarget.elements[0].value = ''
   }
 
   return (
@@ -17,7 +19,7 @@ const Search: FC = () => {
       <div className='search'>
         <div className='search__input'>
           <input name="search" id="search" type="text" placeholder="Buscar película, serie..." className='search__input__content' autoComplete="off" />
-          <button className='search__button__icon' type='submit'>
+          <button className='search__button__icon' type='submit' title='Buscar...'>
             <img src={searchIcon} alt="Icon search" className='search__input__icon' />
           </button>
         </div>
