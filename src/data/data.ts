@@ -9,12 +9,10 @@ export const data: Data[] = [
     year: 2001,
     category: 'movie',
     rating: 8.7,
-    image: {
-      xl: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563819/movie-app/series/strangers-things/strangers-1440_vleifx.jpg',
-      lg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
-      md: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
-      sm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg'
-    },
+    imageXl: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563819/movie-app/series/strangers-things/strangers-1440_vleifx.jpg',
+    imageLg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
+    imageMd: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
+    imageSm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg',
     isRecent: true,
     isTrending: false
   },
@@ -25,12 +23,10 @@ export const data: Data[] = [
     year: 2011,
     category: 'movie',
     rating: 8.7,
-    image: {
-      xl: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563819/movie-app/series/strangers-things/strangers-1440_vleifx.jpg',
-      lg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
-      md: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
-      sm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg'
-    },
+    imageXl: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563819/movie-app/series/strangers-things/strangers-1440_vleifx.jpg',
+    imageLg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
+    imageMd: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
+    imageSm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg',
     isRecent: true,
     isTrending: false
   },
@@ -41,12 +37,10 @@ export const data: Data[] = [
     year: 2017,
     category: 'movie',
     rating: 8.7,
-    image: {
-      xl: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563819/movie-app/series/strangers-things/strangers-1440_vleifx.jpg',
-      lg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
-      md: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
-      sm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg'
-    },
+    imageXl: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563819/movie-app/series/strangers-things/strangers-1440_vleifx.jpg',
+    imageLg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
+    imageMd: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
+    imageSm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg',
     isRecent: true,
     isTrending: true
   },
@@ -57,12 +51,10 @@ export const data: Data[] = [
     year: 2016,
     category: 'movie',
     rating: 8.7,
-    image: {
-      xl: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563819/movie-app/series/strangers-things/strangers-1440_vleifx.jpg',
-      lg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
-      md: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
-      sm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg'
-    },
+    imageXl: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563819/movie-app/series/strangers-things/strangers-1440_vleifx.jpg',
+    imageLg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
+    imageMd: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
+    imageSm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg',
     isRecent: true,
     isTrending: false
   },
@@ -74,12 +66,10 @@ export const data: Data[] = [
     year: 2019,
     category: 'series',
     rating: 8.7,
-    image: {
-      xl: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563819/movie-app/series/strangers-things/strangers-1440_vleifx.jpg',
-      lg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
-      md: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
-      sm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg'
-    },
+    imageXl: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563819/movie-app/series/strangers-things/strangers-1440_vleifx.jpg',
+    imageLg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
+    imageMd: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
+    imageSm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg',
     isRecent: true,
     isTrending: false
   },
@@ -90,12 +80,10 @@ export const data: Data[] = [
     year: 2013,
     category: 'series',
     rating: 8.7,
-    image: {
-      xl: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563819/movie-app/series/strangers-things/strangers-1440_vleifx.jpg',
-      lg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
-      md: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
-      sm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg'
-    },
+    imageXl: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563819/movie-app/series/strangers-things/strangers-1440_vleifx.jpg',
+    imageLg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
+    imageMd: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
+    imageSm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg',
     isRecent: true,
     isTrending: false
   },
@@ -106,12 +94,10 @@ export const data: Data[] = [
     year: 2012,
     category: 'series',
     rating: 8.7,
-    image: {
-      xl: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563819/movie-app/series/strangers-things/strangers-1440_vleifx.jpg',
-      lg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
-      md: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
-      sm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg'
-    },
+    imageXl: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563819/movie-app/series/strangers-things/strangers-1440_vleifx.jpg',
+    imageLg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
+    imageMd: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
+    imageSm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg',
     isRecent: true,
     isTrending: false
   },
@@ -122,12 +108,10 @@ export const data: Data[] = [
     year: 2018,
     category: 'series',
     rating: 8.7,
-    image: {
-      xl: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563819/movie-app/series/strangers-things/strangers-1440_vleifx.jpg',
-      lg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
-      md: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
-      sm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg'
-    },
+    imageXl: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563819/movie-app/series/strangers-things/strangers-1440_vleifx.jpg',
+    imageLg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
+    imageMd: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
+    imageSm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg',
     isRecent: true,
     isTrending: false
   }

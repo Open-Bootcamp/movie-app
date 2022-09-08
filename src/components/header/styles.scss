@@ -49,6 +49,27 @@
 }
 
 @media only screen and (min-width: 768px) {
+
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 20px;
+    width: 100%;
+    transition: backdrop-filter 0.5s ease-in-out, height 0.5s ease-in-out;
+  }
+
+  .header.active {
+    backdrop-filter: blur(10px);
+    border-radius: 15rem;
+    z-index: 999;
+    background: #1b1c1c;
+  }
+
+
   .header__nav {
     display: flex;
     align-items: center;
@@ -77,12 +98,6 @@
     font-size: 18px;
   }
 
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 0;
-  }
 
   .search {
     margin-top: 0;

@@ -1,11 +1,14 @@
 import Bookmark from '@/assets/bookmark.svg'
+import useScroll from '@/hooks/useScroll'
 import { FC } from 'react'
 import { Link } from 'react-router-dom'
 import Search from '../search'
 
 const Desktop: FC = () => {
+  const [scrolled] = useScroll(210)
+
   return (
-    <div className="header">
+    <div className={`header ${scrolled === true ? 'active' : ''}`}>
       <div className="header__nav">
         <h1 className='logo'>
           <Link to='/'>OPENWEEKAPPS</Link>

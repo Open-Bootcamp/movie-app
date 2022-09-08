@@ -1,3 +1,4 @@
+import GoTop from '@/components/gotop'
 import Header from '@/components/header'
 import Favorites from '@/layouts/Favorites'
 import Home from '@/layouts/Home'
@@ -10,6 +11,7 @@ const AppRoute: React.FC = () => {
     <>
       <Router>
         <Header />
+        <GoTop />
 
         <Routes>
           <Route path='/' element={< Home />} />
@@ -17,6 +19,7 @@ const AppRoute: React.FC = () => {
           <Route path='/favorite' element={< Favorites />} />
           <Route path='*' element={<Navigate to='/' />} />
         </Routes>
+
       </Router>
     </>
   )
