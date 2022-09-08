@@ -1,3 +1,4 @@
+import React from 'react'
 import Mobile from "./mobile";
 import "./styles.scss";
 

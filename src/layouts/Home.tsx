@@ -1,7 +1,7 @@
-import React from 'react';
+// import React from 'react';
 import Carousel from '@/components/Carousel';
 
-const data = [
+/* const data = [
   {
     title: "Strangers Things",
     description:
@@ -50,7 +50,7 @@ const data = [
     isRecent: false,
     isTrending: false,
   },
-];
+]; */
 
 function Home() {
   return (
