@@ -3,6 +3,7 @@ interface Image {
   lg: string
   md: string
   sm: string
+  image?: string
 }
 
 export interface Data {

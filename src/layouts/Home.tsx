@@ -1,35 +1,14 @@
-// import React from 'react';
+import Banner from '@/components/banner'
+import { data } from '@/data/data'
 
 const Home = (): JSX.Element => {
+  const image = data[0].image.xl
+
+  const description = 'Después de la extraña desaparición de un niño, un pueblo se encuentra ante un misterio que revela experimentos secretos, fuerzas sobrenaturales y a una niña muy especial.'
+
   return (
     <>
-      <h1>Hola</h1>
-      {/* <Carousel
-        className="swiper-container two"
-        loop={true}
-        speed={1000}
-        autoplay={{
-          delay: 3000
-        }}
-        effect="coverflow"
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView="auto"
-        navigation={false}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 80,
-          depth: 200,
-          modifier: 1,
-          slideShadows: false
-        }}
-      >
-        {/*         {data.map((data) => (
-          <div key={project.id}>
-            <ProjectCard {...project} />
-          </div>
-        ))} }
-      </Carousel> */}
+      <Banner name='Stranger Things' description={description} image={image} />
     </>
   )
 }

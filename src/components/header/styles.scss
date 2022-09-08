@@ -1,9 +1,6 @@
 @import '../../StylesGlobal/base.scss';
 
 // Mobile
-p {
-  color: red;
-}
 
 .header > h1 {
   font-family: 'Poppins';
@@ -33,6 +30,7 @@ p {
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
+
     a {
       color: #fff;
       font-family: 'Montserrat';
@@ -42,6 +40,7 @@ p {
       line-height: 17px;
       text-decoration: none;
     }
+
     &:hover {
       cursor: pointer;
       opacity: 1;
@@ -81,7 +80,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 48px 0;
+    padding: 40px 0;
   }
 
   .search {

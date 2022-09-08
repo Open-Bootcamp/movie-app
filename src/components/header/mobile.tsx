@@ -9,11 +9,11 @@ const Mobile: FC = () => {
       <h1 className='logo'>OPENWEEKAPPS</h1>
       <nav className='nav'>
         <ul className='nav__ul'>
-          <li className='nav__item'>Movies</li>
+          <li className='nav__item'>Películas</li>
           <li className='nav__item'>Series</li>
-          <li className='nav__item'>Trending</li>
+          <li className='nav__item'>Tendencias</li>
           <li className='nav__item'>
-            <Link to="/favorite" >Favorites</Link>
+            <Link to="/favorite" >Mis favoritos</Link>
           </li>
         </ul>
       </nav>

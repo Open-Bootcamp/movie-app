@@ -1,6 +1,5 @@
-import { ReactNode } from 'react'
 
-const Slide = ({ children }: { children: ReactNode }): JSX.Element => {
+const Slide = ({ children }: { children: React.ReactNode }): JSX.Element => {
   return (
     <div className='slider-image'>
       {children}
