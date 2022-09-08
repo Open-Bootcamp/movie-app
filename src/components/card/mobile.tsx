@@ -7,19 +7,22 @@ import './styles.scss'
 const Mobile: FC<Data> = ({ title, year, rating, image, isRecent, isTrending }) => {
   return (
     <div className="container_card">
-      <div className="card_content">
-        <div className="card_description">
-          <h3 className="card_description-title">{title}</h3>
-          <p className="card_description-annio">{year}</p>
+      <div className="card">
+        <img src={image.md} alt={title} />
+        <div className="card_content">
+          <div className="card_description">
+            <h3 className="card_description-title">{title}</h3>
+            <p className="card_description-annio">{year}</p>
+          </div>
+          <div className="card_rating">
+            <img src={Star} alt="Star ratio" />
+            <p className="card_rating-value">{rating}</p>
+          </div>
         </div>
-        <div className="card_rating">
-          <img src={Star} alt="Star ratio" />
-          <p className="card_rating-value">{rating}</p>
-        </div>
+        <button className='card_bookmark'>
+          <img src={Bookmark} alt="boomark" />
+        </button>
       </div>
-      <button className='card_bookmark'>
-        <img src={Bookmark} alt="boomark" />
-      </button>
     </div>
   )
 }
