@@ -1,16 +1,18 @@
-type Image = {
-  xl: string;
-  lg: string;
-  md: string;
-  sm: string;
-};
+interface Image {
+  xl: string
+  lg: string
+  md: string
+  sm: string
+}
 
 export interface Data {
-  image: Image;
-  title: string;
-  year: number;
-  rating: string;
-  isRecent: boolean;
-  isTrending: boolean;
-  isBookmarked: boolean;
+  id: number
+  image: Image
+  title: string
+  description?: string
+  category?: string
+  year: number
+  rating: number
+  isRecent: boolean
+  isTrending: boolean
 }
