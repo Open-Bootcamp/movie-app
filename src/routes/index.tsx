@@ -8,12 +8,12 @@ import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-d
 const AppRoute: React.FC = () => {
   return (
     <>
-      <Header />
-
       <Router>
+        <Header />
+
         <Routes>
           <Route path='/' element={< Home />} />
-          <Route path='/search' element={< Search />} />
+          <Route path='/search/:name' element={< Search />} />
           <Route path='/favorite' element={< Favorites />} />
           <Route path='*' element={<Navigate to='/' />} />
         </Routes>
