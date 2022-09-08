@@ -1,8 +1,7 @@
-import { useParams } from 'react-router';
+import { useParams } from 'react-router'
 
-function Search() {
-
-  const { name } = useParams();
+const Search = (): JSX.Element => {
+  const { name } = useParams()
 
   return (
     <>

@@ -2,7 +2,7 @@ import React from 'react'
 import Mobile from './mobile'
 import './styles.scss'
 import { data } from '@/data/data'
-const Card: React.FC = () => {
+const CardFavorite: React.FC = () => {
   return (
     <>
       {
@@ -13,4 +13,4 @@ const Card: React.FC = () => {
   )
 }
 
-export default Card
+export default CardFavorite

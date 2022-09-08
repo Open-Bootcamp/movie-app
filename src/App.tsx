@@ -1,12 +1,11 @@
-import Header from '@/components/header';
-import AppRoute from '@/routes';
+import AppRoute from '@/routes'
 
-function App() {
+const App = (): JSX.Element => {
   return (
     <div className="App">
       <AppRoute />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
