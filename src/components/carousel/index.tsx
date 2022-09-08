@@ -1,11 +1,10 @@
-import React from 'react';
-import SwiperCore, { A11y, Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react';
-import Slide from './Slide';
-
+import React from 'react'
+import SwiperCore, { A11y, Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper'
+import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react'
+import 'swiper/scss'
+import 'swiper/scss/navigation'
+import 'swiper/scss/pagination'
+import Slide from './Slide'
 
 const Carousel: React.FunctionComponent<SwiperProps> = (props) => {
   SwiperCore.use([Autoplay])
@@ -27,7 +26,7 @@ const Carousel: React.FunctionComponent<SwiperProps> = (props) => {
         </SwiperSlide>
       ))}
     </Swiper>
-  );
-};
+  )
+}
 
-export default Carousel;
+export default Carousel

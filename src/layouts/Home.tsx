@@ -1,10 +1,10 @@
 // import React from 'react';
-import Carousel from '@/components/carousel'
 
 const Home = (): JSX.Element => {
   return (
     <>
-      <Carousel
+      <h1>Hola</h1>
+      {/* <Carousel
         className="swiper-container two"
         loop={true}
         speed={1000}
@@ -28,8 +28,8 @@ const Home = (): JSX.Element => {
           <div key={project.id}>
             <ProjectCard {...project} />
           </div>
-        ))} */}
-      </Carousel>
+        ))} }
+      </Carousel> */}
     </>
   )
 }
