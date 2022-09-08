@@ -1,6 +1,6 @@
-import Card from "../components/card/index";
+import Card from '../components/card/index'
 
-function Favorites() {
+const Favorites = (): JSX.Element => {
   return (
     <>
       <h1>Favorites</h1>

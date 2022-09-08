@@ -1,9 +1,9 @@
 import React from 'react'
-import Mobile from "./mobile";
-import "./styles.scss";
+import Mobile from './mobile'
+import './styles.scss'
 
 const Card: React.FC = () => {
-  return <Mobile />;
-};
+  return <Mobile />
+}
 
-export default Card;
+export default Card
