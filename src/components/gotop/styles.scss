@@ -1,0 +1,22 @@
+.go-top {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  background: rgba(0, 0, 0, .6);
+  border-radius: 50%;
+  padding: 5px;
+
+
+  button {
+    background: transparent;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    img {
+      width: 40px;
+    }
+  }
+}

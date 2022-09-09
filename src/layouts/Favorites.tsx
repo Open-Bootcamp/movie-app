@@ -5,7 +5,6 @@ const Favorites = (): JSX.Element => {
   return (
     <>
       <h1>Favorites</h1>
-{/*       <Card></Card> */}
       <CardFavorite></CardFavorite>
     </>
   )

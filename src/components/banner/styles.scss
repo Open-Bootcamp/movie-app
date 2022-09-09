@@ -1,0 +1,45 @@
+.banner {
+
+  min-height: 620px;
+
+  &__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 74px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  &__description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 670px;
+  }
+
+  &__container {
+    margin-top: 180px;
+  }
+
+
+}
+
+.banner__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  height: 620px;
+
+  img {
+    width: 100%;
+    filter: brightness(0.5);
+    height: 620px;
+  }
+}

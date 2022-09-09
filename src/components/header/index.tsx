@@ -4,13 +4,12 @@ import Mobile from './mobile'
 import './styles.scss'
 
 const Header: React.FC = () => {
-
-  const { isMobile, isDesktop } = useDevice()
+  const { isMobile, isDesktop, isTablet, isLaptop } = useDevice()
 
   return (
     <>
-      {isMobile && <Mobile />}
-      {isDesktop && <Desktop />}
+      {isMobile === true || isTablet === true || isLaptop === true ? <Mobile /> : null}
+      {isDesktop === true ? <Desktop /> : null}
     </>
   )
 }
