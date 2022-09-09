@@ -1,11 +1,11 @@
 import Bookmark from '@/assets/bookmark.svg'
 import Star from '@/assets/star.svg'
-import { Data } from '@/types/data.type'
+import { MobileProps } from '@/types/data.type'
 import { FC, useContext } from 'react'
 import { favoriteContext } from '@/context/favorite'
 import './styles.scss'
 
-const Mobile: FC<Data> = ({ id, title, year, rating, imageMd, imageXl, description, isRecent, isTrending, handleClick }) => {
+const Mobile: FC<MobileProps> = ({ title, year, rating, imageMd, imageXl, description, isRecent, handleClick }) => {
   // agregar favorito
   const { favorites, setFavorites } = useContext(favoriteContext)
 
