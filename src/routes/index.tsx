@@ -1,15 +1,15 @@
-import GoTop from "@/components/gotop";
-import Header from "@/components/header";
-import Favorites from "@/layouts/Favorites";
-import Home from "@/layouts/Home";
-import Search from "@/layouts/Search";
-import React from "react";
+import GoTop from '@/components/gotop'
+import Header from '@/components/header'
+import Favorites from '@/layouts/Favorites'
+import Home from '@/layouts/Home'
+import Search from '@/layouts/Search'
+import React from 'react'
 import {
   BrowserRouter as Router,
   Navigate,
   Route,
-  Routes,
-} from "react-router-dom";
+  Routes
+} from 'react-router-dom'
 
 const AppRoute: React.FC = () => {
   return (
@@ -27,7 +27,7 @@ const AppRoute: React.FC = () => {
         </div>
       </Router>
     </>
-  );
-};
+  )
+}
 
-export default AppRoute;
+export default AppRoute
