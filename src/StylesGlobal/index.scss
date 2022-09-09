@@ -24,6 +24,13 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+
+  .App-out {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
   .App {
     padding: 0 43px;
     max-width: $maxWidth;
@@ -31,6 +38,5 @@ body {
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
-    position: relative;
   }
 }

@@ -4,7 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 import './styles.scss'
 
 const GoTop = (): JSX.Element => {
-  const [scrolled, handleScroll] = useScroll(1)
+  const [scrolled, handleScroll] = useScroll(250)
 
   return (
     <>
