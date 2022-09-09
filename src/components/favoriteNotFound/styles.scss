@@ -1,32 +1,40 @@
 @import '../../StylesGlobal/base.scss';
 
-.container{
+.container {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  place-content: center;
+  min-height: 90vh;
 
-  &_notFound{
+
+  &_notFound {
     font-family: 'Poppins';
-    margin-top: 50px;
-    & > h1{
-    color: $colorSecundary;
-    margin-top: 39px;
-    font-weight: 800;
-    font-size: 39px;
-    line-height: 58px;
-  }
-  & > p{
-    color: $colorSecundary;
-    margin-top: 5px;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 19.5px;
-    opacity: 0.8;
-  }
+
+    & > h1 {
+      color: $colorSecundary;
+      margin-top: 39px;
+      font-weight: 800;
+      font-size: 39px;
+      line-height: 58px;
+    }
+
+    & > p {
+      color: $colorSecundary;
+      margin-top: 5px;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 19.5px;
+      opacity: 0.8;
+    }
   }
 }
-.btn{
+
+.btn_home {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
   width: 140px;
   margin-top: 50px;
   font-family: 'Montserrat';
@@ -45,9 +53,11 @@
   gap: 9px;
   transition: opacity .3s;
 }
-.btn:hover{
+
+.btn:hover {
   opacity: 0.5;
 }
+
 .btn_home {
   text-decoration: none;
 }

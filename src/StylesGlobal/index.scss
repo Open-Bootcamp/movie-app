@@ -28,13 +28,28 @@
   margin-bottom: 60px;
 }
 
+.category__home {
+  margin-bottom: 36px;
+}
+
+.title__category__home {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 57px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+
 .container__category {
   margin-top: 68px;
 }
 
 .card__container__grid {
   display: grid;
-  grid-template-columns: repeat(5, 260px);
+  grid-template-columns: repeat(auto-fill, 260px);
   gap: 43px;
 }
 

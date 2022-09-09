@@ -6,12 +6,9 @@ import { FC, useContext } from 'react'
 import './styles.scss'
 
 const Mobile: FC<MobileProps> = ({ id, title, year, rating, imageMd, imageXl, description, isRecent, handleClick }) => {
-  // agregar favorito
-
   const { favorites, setFavorites } = useContext(favoriteContext)
 
   const handleAddFavorite = (id: number): void => {
-    // const newFavorite = favorites?.filter(element => element.id !== id)
     const validateId = favorites?.findIndex(element => element.id === id)
     if (validateId === -1) {
       const currentFavorites = [...favorites, { id, title, year, rating, imageMd }]

@@ -4,7 +4,7 @@ import Bookmark from '../../assets/bookmark.svg'
 import Star from '../../assets/star.svg'
 import './styles.scss'
 
-const Mobile: FC<Data> = ({ title, year, rating, imageMd, isRecent, isTrending }) => {
+const Mobile: FC<Data> = ({ title, year, rating, imageMd, isRecent }) => {
   return (
     <div className="container_card">
       <div className="card">
