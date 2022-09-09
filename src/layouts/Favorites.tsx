@@ -4,7 +4,7 @@ import CardFavorite from '@/components/cardFavorite'
 const Favorites = (): JSX.Element => {
   return (
     <>
-      <h1>Favorites</h1>
+      <h1 className='title__category'>Favorites</h1>
       <CardFavorite></CardFavorite>
     </>
   )

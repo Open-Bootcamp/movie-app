@@ -16,6 +16,8 @@ export interface Data {
   year: number
   rating: number
   isRecent: boolean
-  isTrending: boolean
-  handleClick: (arg0: BannerProps) => any
+}
+
+export interface MobileProps extends Data {
+  handleClick?: (arg0: BannerProps) => any
 }

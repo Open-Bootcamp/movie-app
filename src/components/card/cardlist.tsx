@@ -1,10 +1,10 @@
 import Bookmark from '@/assets/bookmark.svg'
 import Star from '@/assets/star.svg'
-import { Data } from '@/types/data.type'
+import { MobileProps } from '@/types/data.type'
 import { FC } from 'react'
 import './styles.scss'
 
-const Mobile: FC<Data> = ({ title, year, rating, imageMd, imageXl, description, isRecent, isTrending, handleClick }) => {
+const Mobile: FC<MobileProps> = ({ title, year, rating, imageMd, imageXl, description, isRecent, isTrending, handleClick }) => {
   return (
     <div className="container_card" onClick={(): void => handleClick({ title, imageXl, description })}>
       <div className="card">
