@@ -2,6 +2,10 @@
 
 // Mobile
 
+.header {
+  margin-top: 19px;
+}
+
 .header > h1 {
   font-family: 'Poppins';
   font-style: normal;
@@ -9,7 +13,6 @@
   font-size: 32px;
   color: $colorPrimary;
   text-align: center;
-  margin-top: 19px;
 }
 
 .nav {
@@ -48,25 +51,28 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
 
 
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 43px;
+    max-width: 1440px;
+    margin: 0 auto;
     position: sticky;
     top: 20px;
     width: 100%;
-    transition: backdrop-filter 0.5s ease-in-out, height 0.5s ease-in-out;
+    transition: background .6s;
   }
 
   .header.active {
     backdrop-filter: blur(10px);
     border-radius: 15rem;
     z-index: 999;
-    background: #1b1c1c;
+    background: #1b1c1cc7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
 

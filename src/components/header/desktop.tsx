@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import Search from '../search'
 
 const Desktop: FC = () => {
-  const [scrolled] = useScroll(210)
+  const [scrolled] = useScroll(6)
 
   return (
     <div className={`header ${scrolled === true ? 'active' : ''}`}>

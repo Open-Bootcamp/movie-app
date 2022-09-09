@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 
-const useScroll = (scrollY: number): Array<(any | (() => void))> => {
+const useScroll = (scrollYCustom: number): Array<(any | (() => void))> => {
   const [scrolled, setScrolled] = useState<boolean>(false)
 
   React.useEffect(() => {
     const onScroll = (): void => {
-      if (window.scrollY > scrollY) {
+      if (window.scrollY > scrollYCustom) {
         setScrolled(true)
       } else {
         setScrolled(false)
