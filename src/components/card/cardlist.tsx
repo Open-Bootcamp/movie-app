@@ -1,10 +1,29 @@
 import Bookmark from '@/assets/bookmark.svg'
 import Star from '@/assets/star.svg'
+import { favoriteContext } from '@/context/favorite'
 import { MobileProps } from '@/types/data.type'
-import { FC } from 'react'
+import { FC, useContext } from 'react'
 import './styles.scss'
 
-const Mobile: FC<MobileProps> = ({ title, year, rating, imageMd, imageXl, description, isRecent, handleClick }) => {
+const Mobile: FC<MobileProps> = ({ id, title, year, rating, imageMd, imageXl, description, isRecent, handleClick }) => {
+  // agregar favorito
+
+  const { favorites, setFavorites } = useContext(favoriteContext)
+
+  const handleAddFavorite = (id: number): void => {
+    // const newFavorite = favorites?.filter(element => element.id !== id)
+    const validateId = favorites?.findIndex(element => element.id === id)
+    if (validateId === -1) {
+      const currentFavorites = [...favorites, { id, title, year, rating, imageMd }]
+      setFavorites(currentFavorites)
+      localStorage.setItem('favoriteList', JSON.stringify(currentFavorites))
+    } else {
+      const removeFavorite = favorites?.filter(element => element.id !== id)
+      setFavorites(removeFavorite)
+      localStorage.setItem('favoriteList', JSON.stringify(removeFavorite))
+    }
+  }
+
   return (
     <div className="container_card" onClick={(): void => handleClick({ title, imageXl, description })}>
       <div className="card">
@@ -19,7 +38,7 @@ const Mobile: FC<MobileProps> = ({ title, year, rating, imageMd, imageXl, descri
             <p className="card_rating-value">{rating}</p>
           </div>
         </div>
-        <button className='card_bookmark'>
+        <button className='card_bookmark' onClick={() => handleAddFavorite(id)}>
           <img src={Bookmark} alt="boomark" />
         </button>
       </div>

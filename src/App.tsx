@@ -1,5 +1,6 @@
 import AppRoute from '@/routes'
 import { useEffect } from 'react'
+import FavoriteContext from '@/context/favorite'
 
 const App = (): JSX.Element => {
   useEffect(() => {
@@ -14,7 +15,9 @@ const App = (): JSX.Element => {
   return (
     <>
       <div className="App-out">
-        <AppRoute />
+        <FavoriteContext>
+          <AppRoute />
+        </FavoriteContext>
       </div>
     </>
 
