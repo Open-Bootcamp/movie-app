@@ -1,14 +1,14 @@
+import Bookmark from '@/assets/bookmark.svg'
+import Star from '@/assets/star.svg'
 import { Data } from '@/types/data.type'
 import { FC } from 'react'
-import Bookmark from '../../assets/bookmark.svg'
-import Star from '../../assets/star.svg'
 import './styles.scss'
 
-const Mobile: FC<Data> = ({ title, year, rating, image, isRecent, isTrending }) => {
+const Mobile: FC<Data> = ({ title, year, rating, imageMd, imageXl, description, isRecent, isTrending, handleClick }) => {
   return (
-    <div className="container_card">
+    <div className="container_card" onClick={(): void => handleClick({ title, imageXl, description })}>
       <div className="card">
-        <img src={image.md} alt={title} />
+        <img src={imageMd} alt={title} />
         <div className="card_content">
           <div className="card_description">
             <h3 className="card_description-title">{title}</h3>

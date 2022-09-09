@@ -1,26 +1,33 @@
 @import '../../StylesGlobal/base.scss';
 
-.container{
-  &_card{
+.container {
+  &_card {
     border: 1px solid #4F4F4F;
     width: 282px;
     height: 198px;
     border-radius: 8px;
     box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.5);
-}}
 
-.card{
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.card {
   width: 100%;
   height: 100%;
   position: relative;
 }
-.card > img{
+
+.card > img {
   width: 100%;
   height: 100%;
   border-radius: 8px;
-/*   object-fit: cover; */
+  /*   object-fit: cover; */
 }
-.card_content{
+
+.card_content {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -32,33 +39,38 @@
   border-end-end-radius: 8px;
   border-end-start-radius: 8px;
 }
-.card_description{
+
+.card_description {
   margin-left: 8px;
   margin-bottom: 6px;
-  &-title{
+
+  &-title {
     font-family: 'Montserrat';
     color: $colorSecundary;
     font-weight: 700;
     font-size: 16px;
     line-height: 19.5px;
     margin-top: 6px;
-    }
-    &-annio{
-      font-family: 'Poppins';
-      color: $colorSecundary;
-      opacity: 0.7;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 18px;
-    }
+  }
+
+  &-annio {
+    font-family: 'Poppins';
+    color: $colorSecundary;
+    opacity: 0.7;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
-.card_rating{
+
+.card_rating {
   display: flex;
   gap: 4px;
   align-items: center;
   margin-bottom: 5px;
   margin-right: 18px;
-  &-value{
+
+  &-value {
     font-family: 'Poppins';
     color: $colorSecundary;
     opacity: 0.7;
@@ -68,7 +80,7 @@
   }
 }
 
-.card_bookmark{
+.card_bookmark {
   position: absolute;
   z-index: 2;
   width: 40px;
@@ -84,13 +96,14 @@
   align-items: center;
   cursor: pointer;
   border: none;
-  & > img{
+
+  & > img {
     width: 16px;
     height: 20px;
   }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   .container {
     &_card {
       width: 258px;
@@ -98,27 +111,33 @@
       background: $colorBaseCard;
     }
   }
-  .card>img {
+
+  .card > img {
     height: 304px;
     object-fit: cover;
   }
-  .card_content{
+
+  .card_content {
     background: transparent;
     margin-bottom: 25px;
   }
-  .card_description{
+
+  .card_description {
     margin-left: 17px;
+
     &-title {
       font-size: 16px;
     }
   }
-  .card_bookmark{
+
+  .card_bookmark {
     background: transparent;
     top: initial;
-    &>img {
+
+    & > img {
       width: 13px;
       height: 16px;
     }
-}
+  }
 
 }

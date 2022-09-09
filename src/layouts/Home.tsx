@@ -1,35 +1,36 @@
-// import React from 'react';
+import Banner from '@/components/banner'
+import Card from '@/components/card'
+import { data } from '@/data/data'
+import { useState } from 'react'
+
+interface State {
+  title: string
+  description: string
+  imageXl: string
+}
 
 const Home = (): JSX.Element => {
+  const [banner, setBanner] = useState<State>({
+    title: data[0].title,
+    description: data[0].description,
+    imageXl: data[0].imageXl
+  })
+
+  const handleClick = ({ title, description, imageXl }: State): any => {
+    setBanner({
+      title,
+      description,
+      imageXl
+    })
+  }
+
   return (
     <>
-      <h1>Hola</h1>
-      {/* <Carousel
-        className="swiper-container two"
-        loop={true}
-        speed={1000}
-        autoplay={{
-          delay: 3000
-        }}
-        effect="coverflow"
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView="auto"
-        navigation={false}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 80,
-          depth: 200,
-          modifier: 1,
-          slideShadows: false
-        }}
-      >
-        {/*         {data.map((data) => (
-          <div key={project.id}>
-            <ProjectCard {...project} />
-          </div>
-        ))} }
-      </Carousel> */}
+      <Banner {...banner} />
+
+      <section>
+        <Card handleClick={handleClick} />
+      </section>
     </>
   )
 }
