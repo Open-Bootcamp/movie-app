@@ -1,12 +1,11 @@
-// import Card from '@/components/card/index'
 import CardFavorite from '@/components/cardFavorite'
-// import FavoriteNotFound from '@/components/favoriteNotFound'
 
 const Favorites = (): JSX.Element => {
+  const recoveryData = JSON.parse(localStorage.getItem('favoriteList'))
   return (
     <>
       <h1 className='title__category'>Favorites</h1>
-      <CardFavorite></CardFavorite>
+      <CardFavorite favorites={recoveryData}></CardFavorite>
     </>
   )
 }
