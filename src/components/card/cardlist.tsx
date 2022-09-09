@@ -4,7 +4,7 @@ import { MobileProps } from '@/types/data.type'
 import { FC } from 'react'
 import './styles.scss'
 
-const Mobile: FC<MobileProps> = ({ title, year, rating, imageMd, imageXl, description, isRecent, isTrending, handleClick }) => {
+const Mobile: FC<MobileProps> = ({ title, year, rating, imageMd, imageXl, description, isRecent, handleClick }) => {
   return (
     <div className="container_card" onClick={(): void => handleClick({ title, imageXl, description })}>
       <div className="card">
