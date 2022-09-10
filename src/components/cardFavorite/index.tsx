@@ -1,6 +1,6 @@
 import { Data } from '@/types/data.type'
 import { FC } from 'react'
-import Mobile from './mobile'
+import Mobile from './cardFavorite'
 import './styles.scss'
 
 interface Props{

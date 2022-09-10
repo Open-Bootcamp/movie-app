@@ -10,13 +10,13 @@ const FavoriteNotFound: React.FC = () => {
       <div className='container'>
         <section className='container_notFound'>
           <img src={favoriteNotFound} alt="No tiene favorito" />
-          <h1>FAVORITES</h1>
-          <p>You do not have favorites</p>
+          <h1>FAVORITOS</h1>
+          <p>Tu no tienes favoritos guardados 😢</p>
         </section>
         <Link to='/' className='btn_home'>
           <button className='btn' >
             <img src={arrowLeft} alt="regreso a home" />
-            GO BACK
+            Ir atrás
           </button>
         </Link>
       </div>
