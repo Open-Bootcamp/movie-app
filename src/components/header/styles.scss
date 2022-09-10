@@ -1,3 +1,123 @@
-p {
-  color: red;
+@import '../../StylesGlobal/base.scss';
+
+// Mobile
+
+.header {
+  margin-top: 19px;
+}
+
+.header > h1 {
+  text-align: center;
+}
+
+.header > h1 > a {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: $colorPrimary;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav {
+  padding: 17px 27px 0;
+
+  &__ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__item {
+    color: #fff;
+    opacity: 0.8;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    a {
+      color: #fff;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      text-decoration: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 43px;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: sticky;
+    top: 20px;
+    width: 100%;
+    transition: background .6s;
+  }
+
+  .header.active {
+    backdrop-filter: blur(10px);
+    border-radius: 15rem;
+    z-index: 999;
+    background: #1b1c1cc7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+
+  .header__nav {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+  }
+
+  .logo a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: $colorPrimary;
+    margin-top: 0;
+    text-decoration: none;
+  }
+
+  .nav {
+    padding: 0;
+  }
+
+  .nav__ul {
+    gap: 48px;
+  }
+
+  .nav__item {
+    font-size: 18px;
+  }
+
+
+  .search {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .search__container {
+    display: flex;
+    gap: 47px;
+    align-items: center;
+  }
 }

@@ -1,0 +1,63 @@
+@import './base';
+
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.title__category {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 74px;
+  line-height: 111px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.container__category {
+  margin-top: 68px;
+}
+
+.card__container__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 260px);
+  gap: 43px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: #242525;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .App-out {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .App {
+    padding: 0 43px;
+    max-width: $maxWidth;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
