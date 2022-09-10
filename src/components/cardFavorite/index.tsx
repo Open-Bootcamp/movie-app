@@ -1,12 +1,17 @@
+import { Data } from '@/types/data.type'
 import React from 'react'
 import Mobile from './mobile'
 import './styles.scss'
-import { data } from '@/data/data'
-const CardFavorite: React.FC = () => {
+
+interface Props{
+  favorites: Data[]
+}
+
+const CardFavorite: React.FC<Props> = ({ favorites }) => {
   return (
     <>
       {
-        data.map((element) => <Mobile {...element} />)
+        favorites.map((element) => <Mobile {...element} />)
       }
 
     </>

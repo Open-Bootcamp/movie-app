@@ -13,22 +13,20 @@ export const data: Data[] = [
     imageLg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
     imageMd: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
     imageSm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg',
-    isRecent: true,
-    isTrending: false
+    isRecent: true
   },
   {
     id: 2,
     title: 'El señor de los anillos',
     description: 'When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.',
     year: 2011,
-    category: 'movie',
+    category: 'trending',
     rating: 8.7,
     imageXl: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563819/movie-app/series/strangers-things/strangers-1440_vleifx.jpg',
     imageLg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
     imageMd: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
     imageSm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg',
-    isRecent: true,
-    isTrending: false
+    isRecent: true
   },
   {
     id: 3,
@@ -41,8 +39,7 @@ export const data: Data[] = [
     imageLg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
     imageMd: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
     imageSm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg',
-    isRecent: true,
-    isTrending: true
+    isRecent: true
   },
   {
     id: 4,
@@ -55,8 +52,7 @@ export const data: Data[] = [
     imageLg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
     imageMd: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
     imageSm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg',
-    isRecent: true,
-    isTrending: false
+    isRecent: true
   },
   // Series
   {
@@ -70,22 +66,20 @@ export const data: Data[] = [
     imageLg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
     imageMd: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
     imageSm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg',
-    isRecent: true,
-    isTrending: false
+    isRecent: true
   },
   {
     id: 6,
     title: 'Strangers Things',
     description: 'When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.',
     year: 2013,
-    category: 'series',
+    category: 'trending',
     rating: 8.7,
     imageXl: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563819/movie-app/series/strangers-things/strangers-1440_vleifx.jpg',
     imageLg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
     imageMd: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
     imageSm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg',
-    isRecent: true,
-    isTrending: false
+    isRecent: true
   },
   {
     id: 7,
@@ -98,8 +92,7 @@ export const data: Data[] = [
     imageLg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
     imageMd: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
     imageSm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg',
-    isRecent: true,
-    isTrending: false
+    isRecent: true
   },
   {
     id: 8,
@@ -112,7 +105,6 @@ export const data: Data[] = [
     imageLg: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-260_ylspah.jpg',
     imageMd: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-280_kox12h.jpg',
     imageSm: 'https://res.cloudinary.com/dqm2lvou8/image/upload/v1662563818/movie-app/series/strangers-things/strangers-160_mpqpbh.jpg',
-    isRecent: true,
-    isTrending: false
+    isRecent: true
   }
 ]

@@ -9,7 +9,9 @@ const Search: FC = () => {
   const handleChange = (e: React.FormEvent<any>): void => {
     e.preventDefault()
 
-    navigate(`/search/${e.currentTarget.elements[0].value}`)
+    const { value } = e.currentTarget.elements[0] as HTMLInputElement
+
+    navigate(`/search/${value}`)
 
     e.currentTarget.elements[0].value = ''
   }
