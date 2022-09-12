@@ -1,4 +1,3 @@
-// import Bookmark from '@/assets/bookmark.svg'
 import Star from '@/assets/star.svg'
 import { contextGlobal } from '@/context/contextGlobal'
 import { Data, MobileProps } from '@/types/data.type'
@@ -48,7 +47,7 @@ const Mobile: FC<MobileProps> = ({ id, title, year, rating, images: { md, xl }, 
   }
 
   return (
-    <div className="container_card" onClick={(): void => handleClick!({ title, xl, description })} style={{ minHeight: '392px' }} title='Display in banner 🤓'>
+    <div className="container_card" onClick={(): void => handleClick!({ title, xl, description })} title='Display in banner 🤓'>
       <div className="card">
         <LazyLoadImage src={md} alt={title} />
         <div className="card_content">
