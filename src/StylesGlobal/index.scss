@@ -28,7 +28,6 @@
 .title__category {
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 800;
   font-size: 24px;
   line-height: 36px;
   color: #FFFFFF;
@@ -91,14 +90,15 @@ body {
     margin: 0 auto;
   }
   .container__category{
-    margin-top: 68px;
-    padding: inherit;
+    margin-top: 74px;
+    padding: initial;
   }
   .title__category{
-    font-size: 42px;
-    line-height: 60px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    font-weight: 800;
+    font-size: 74px;
+    line-height: 111px;
+    margin-bottom: 58px;
+
   }
   .card__container__grid{
     grid-template-columns: repeat(auto-fill, 260px);
