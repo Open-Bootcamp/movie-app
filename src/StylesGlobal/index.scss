@@ -25,8 +25,6 @@
   font-family: 'Poppins';
 }
 
-
-
 .title__category {
   font-family: 'Poppins';
   font-style: normal;
@@ -106,4 +104,17 @@ body {
     grid-template-columns: repeat(auto-fill, 260px);
     gap: 43px;
   }
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 60%;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $colorPrimary;
 }

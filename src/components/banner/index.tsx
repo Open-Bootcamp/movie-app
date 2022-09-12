@@ -4,12 +4,12 @@ import { FC } from 'react'
 import Desktop from './desktop'
 import './styles.scss'
 
-const Banner: FC<BannerProps> = ({ imageXl, title, description }): JSX.Element => {
+const Banner: FC<BannerProps> = ({ xl, title, description }): JSX.Element => {
   const { isDesktop } = useDevice()
 
   return (
     <>
-      {isDesktop === true ? <Desktop imageXl={imageXl} title={title} description={description} /> : null}
+      {isDesktop === true ? <Desktop xl={xl} title={title} description={description} /> : null}
     </>
   )
 }

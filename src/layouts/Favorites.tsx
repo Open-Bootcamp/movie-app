@@ -1,14 +1,14 @@
 import CardFavorite from '@/components/cardFavorite'
 import FavoriteNotFound from '@/components/favoriteNotFound'
-import { favoriteContext } from '@/context/favorite'
+import { contextGlobal } from '@/context/contextGlobal'
 import { useContext, useEffect } from 'react'
 
 const Favorites = (): JSX.Element => {
-  const { favorites, setFavorites } = useContext(favoriteContext)
+  const { favorites, setFavorites } = useContext(contextGlobal)
   const recoveryData = localStorage.getItem('favoriteList') !== null ? JSON.parse(localStorage.getItem('favoriteList')) : null
 
   useEffect(() => {
-    setFavorites(recoveryData)
+    setFavorites!(recoveryData)
   }, [])
 
   return (

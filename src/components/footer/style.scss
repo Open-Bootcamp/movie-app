@@ -1,0 +1,44 @@
+.footer {
+  display: grid;
+  place-content: center;
+  padding: 20px 0 30px;
+}
+
+.logo {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #E50914;
+  text-align: center;
+}
+
+.chl {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.repo {
+  background: #ff000080;
+  padding: 2px 5px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
