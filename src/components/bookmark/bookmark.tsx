@@ -1,6 +1,8 @@
 import BookmarkEnable from '../../assets/bookmark.svg'
 import BookmarkActive from '../../assets/bookmarkActive.svg'
 
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+
 interface BookmarkProps {
   isBookmarked: boolean
 }
@@ -9,7 +11,7 @@ export const Bookmark = ({ isBookmarked }: BookmarkProps): JSX.Element => {
   return (
     <>
       {
-        isBookmarked ? <img src={BookmarkActive} alt="active" /> : <img src={BookmarkEnable} alt="enabled" />
+        isBookmarked ? <LazyLoadImage src={BookmarkActive} alt="active" /> : <LazyLoadImage src={BookmarkEnable} alt="enabled" />
       }
     </>
   )
