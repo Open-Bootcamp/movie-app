@@ -1,11 +1,21 @@
 import CardFavorite from '@/components/cardFavorite'
+import FavoriteNotFound from '@/components/favoriteNotFound'
+import { favoriteContext } from '@/context/favorite'
+import { useContext, useEffect } from 'react'
 
 const Favorites = (): JSX.Element => {
-  const recoveryData = JSON.parse(localStorage.getItem('favoriteList'))
+  const { favorites, setFavorites } = useContext(favoriteContext)
+  const recoveryData = localStorage.getItem('favoriteList') !== null ? JSON.parse(localStorage.getItem('favoriteList')) : null
+
+  useEffect(() => {
+    setFavorites(recoveryData)
+  }, [])
+
   return (
     <>
-      <h1 className='title__category'>Favorites</h1>
-      <CardFavorite favorites={recoveryData}></CardFavorite>
+      {
+        favorites?.length > 0 ? <CardFavorite favorites={favorites} /> : <FavoriteNotFound />
+      }
     </>
   )
 }

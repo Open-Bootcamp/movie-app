@@ -1,39 +1,31 @@
-import Bookmark from '@/assets/bookmark.svg'
-import Star from '@/assets/star.svg'
 import { favoriteContext } from '@/context/favorite'
-import { MobileProps } from '@/types/data.type'
+import { Data } from '@/types/data.type'
 import { FC, useContext } from 'react'
 import toast from 'react-hot-toast'
+import Bookmark from '../../assets/bookmark.svg'
+import Star from '../../assets/star.svg'
 import './styles.scss'
 
-const Mobile: FC<MobileProps> = ({ id, title, year, rating, imageMd, imageXl, description, isRecent, handleClick }) => {
+const Mobile: FC<Data> = ({ id, title, year, rating, imageMd, isRecent }) => {
   const { favorites, setFavorites } = useContext(favoriteContext)
 
   const handleAddFavorite = (id: number): void => {
+    toast('Removido de favoritos', {
+      icon: '❌',
+      style: {
+        borderRadius: '10px',
+        background: '#333',
+        color: '#fff',
+        backdropFilter: 'blur(10px)'
+      }
+    })
+
     const validateId = favorites?.findIndex(element => element.id === id)
     if (validateId === -1) {
-      toast('Añadido a favoritos', {
-        icon: '✅',
-        style: {
-          borderRadius: '10px',
-          background: '#333',
-          color: '#fff',
-          backdropFilter: 'blur(10px)'
-        }
-      })
       const currentFavorites = [...favorites, { id, title, year, rating, imageMd }]
       setFavorites(currentFavorites)
       localStorage.setItem('favoriteList', JSON.stringify(currentFavorites))
     } else {
-      toast('Removido de favoritos', {
-        icon: '❌',
-        style: {
-          borderRadius: '10px',
-          background: '#333',
-          color: '#fff',
-          backdropFilter: 'blur(10px)'
-        }
-      })
       const removeFavorite = favorites?.filter(element => element.id !== id)
       setFavorites(removeFavorite)
       localStorage.setItem('favoriteList', JSON.stringify(removeFavorite))
@@ -41,7 +33,7 @@ const Mobile: FC<MobileProps> = ({ id, title, year, rating, imageMd, imageXl, de
   }
 
   return (
-    <div className="container_card" onClick={(): void => handleClick({ title, imageXl, description })}>
+    <div className="container_card">
       <div className="card">
         <img src={imageMd} alt={title} />
         <div className="card_content">
@@ -54,8 +46,8 @@ const Mobile: FC<MobileProps> = ({ id, title, year, rating, imageMd, imageXl, de
             <p className="card_rating-value">{rating}</p>
           </div>
         </div>
-        <button className='card_bookmark' onClick={() => handleAddFavorite(id)} title='Añadir a favoritos ✅'>
-          <img src={Bookmark} alt="boomark" className='bookmark__card__image'/>
+        <button className='card_bookmark' onClick={() => handleAddFavorite(id)}>
+          <img src={Bookmark} alt="boomark" className='bookmark__card__image' />
         </button>
       </div>
     </div>

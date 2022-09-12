@@ -28,13 +28,13 @@ const Home = (): JSX.Element => {
     <>
       <Banner {...banner} />
 
-      <section className='movies'>
-        <h1>Movies</h1>
+      <section className='movies category__home'>
+        <h1 className='title__category__home'>Movies</h1>
         <Card handleClick={handleClick} typeCategory='movie' />
       </section>
 
-      <section className='series'>
-        <h1>Series</h1>
+      <section className='series category__home'>
+        <h1 className='title__category__home'>Series</h1>
         <Card handleClick={handleClick} typeCategory='series' />
       </section>
     </>

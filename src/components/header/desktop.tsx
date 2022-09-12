@@ -32,7 +32,7 @@ const Desktop: FC = () => {
 
         <Search />
 
-        <Link to="/favorite" title='Ir a mis favoritos'>
+        <Link to="/favorite" title='Ir a mis favoritos 🚀'>
           <img src={Bookmark} alt="Icon bookmark" />
         </Link>
 
