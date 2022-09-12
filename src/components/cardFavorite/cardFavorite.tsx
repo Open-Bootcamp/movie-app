@@ -1,13 +1,17 @@
 import { favoriteContext } from '@/context/favorite'
 import { Data } from '@/types/data.type'
-import { FC, useContext } from 'react'
+import { FC, useContext, useState } from 'react'
 import toast from 'react-hot-toast'
-import Bookmark from '../../assets/bookmark.svg'
+// import Bookmark from '../../assets/bookmark.svg'
+// import BookmarkActive from '../../assets/bookmarkActive.svg'
 import Star from '../../assets/star.svg'
+import { Bookmark } from '../bookmark/bookmark'
 import './styles.scss'
 
 const Mobile: FC<Data> = ({ id, title, year, rating, imageMd, isRecent }) => {
   const { favorites, setFavorites } = useContext(favoriteContext)
+  const favoriteId = favorites?.findIndex((element: Data) => element.id === id)
+  const [isBookmarked, setIsBookmarked] = useState<boolean>(favoriteId !== -1)
 
   const handleAddFavorite = (id: number): void => {
     toast('Removido de favoritos', {
@@ -24,10 +28,12 @@ const Mobile: FC<Data> = ({ id, title, year, rating, imageMd, isRecent }) => {
     if (validateId === -1) {
       const currentFavorites = [...favorites, { id, title, year, rating, imageMd }]
       setFavorites(currentFavorites)
+      setIsBookmarked(true)
       localStorage.setItem('favoriteList', JSON.stringify(currentFavorites))
     } else {
       const removeFavorite = favorites?.filter((element: Data) => element.id !== id)
       setFavorites(removeFavorite)
+      setIsBookmarked(false)
       localStorage.setItem('favoriteList', JSON.stringify(removeFavorite))
     }
   }
@@ -47,7 +53,8 @@ const Mobile: FC<Data> = ({ id, title, year, rating, imageMd, isRecent }) => {
           </div>
         </div>
         <button className='card_bookmark' onClick={() => handleAddFavorite(id)}>
-          <img src={Bookmark} alt="boomark" className='bookmark__card__image' />
+          {/* <img src={Bookmark} alt="boomark" className='bookmark__card__image' /> */}
+          <Bookmark isBookmarked={isBookmarked} />
         </button>
       </div>
     </div>
