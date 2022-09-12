@@ -10,7 +10,7 @@ const Mobile: FC = () => {
       <nav className='nav'>
         <ul className='nav__ul'>
           <li className='nav__item'>
-            <Link to='/peliculas'>Películas</Link>
+            <Link to='/movie'>Películas</Link>
           </li>
           <li className='nav__item'>
             <Link to='/series'>Series</Link>

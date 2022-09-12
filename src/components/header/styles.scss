@@ -55,6 +55,14 @@
     }
   }
 }
+@media only screen and (max-width: 340px) {
+  .nav{
+    padding: 17px 12px 0;
+    &__item > a{
+      font-size: 12px;
+    }
+  }
+}
 
 @media only screen and (min-width: 1024px) {
 

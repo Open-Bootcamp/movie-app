@@ -21,7 +21,6 @@
   filter: brightness(100%);
 }
 
-
 .go3958317564 {
   font-family: 'Poppins';
 }
@@ -32,11 +31,11 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 800;
-  font-size: 74px;
-  line-height: 111px;
+  font-size: 24px;
+  line-height: 36px;
   color: #FFFFFF;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 28px;
 }
 
 .category__home {
@@ -55,19 +54,26 @@
 
 
 .container__category {
-  margin-top: 68px;
+  margin-top: 47px;
+  padding:  0 18px;
 }
 
 .card__container__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 260px);
-  gap: 43px;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  place-items: center;
+  gap: 37px 10px;
 }
 
 body {
   min-width: 320px;
   min-height: 100vh;
   background: #242525;
+}
+@media only screen and (min-width: 340px) {
+  .card__container__grid {
+    grid-template-columns: repeat(auto-fill, 160px);
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -85,5 +91,19 @@ body {
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
+  }
+  .container__category{
+    margin-top: 68px;
+    padding: inherit;
+  }
+  .title__category{
+    font-size: 42px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  .card__container__grid{
+    grid-template-columns: repeat(auto-fill, 260px);
+    gap: 43px;
   }
 }
