@@ -7,7 +7,7 @@ const Footer = (): JSX.Element => {
     <div className="footer">
       <h1 className='logo'>MOVIE APP</h1>
       <div className='repo' title='Go to repository'>
-        <a href="https://github.com/Open-Bootcamp/movie-app">Github repository</a>
+        <a href="https://github.com/Open-Bootcamp/movie-app" target='_blank'>Github repository</a>
         <img src={Github} alt="Github icon" />
       </div>
       <span className='chl'>Copyright 2022. All Rights Reserved.</span>

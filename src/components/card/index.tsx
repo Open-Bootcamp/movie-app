@@ -1,5 +1,4 @@
 import { contextGlobal } from '@/context/contextGlobal'
-// import { data } from '@/data/data'
 import { BannerProps } from '@/types/data.type'
 import React, { useContext } from 'react'
 import CardList from './cardlist'

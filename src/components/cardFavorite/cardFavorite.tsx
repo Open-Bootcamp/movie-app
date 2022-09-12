@@ -1,14 +1,16 @@
 import { contextGlobal } from '@/context/contextGlobal'
 import { Data, DataFavorite } from '@/types/data.type'
-import { FC, useContext } from 'react'
+import { FC, useContext, useState } from 'react'
 import toast from 'react-hot-toast'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import Bookmark from '../../assets/bookmark.svg'
 import Star from '../../assets/star.svg'
+import { Bookmark } from '../bookmark/bookmark'
 import './styles.scss'
 
 const Mobile: FC<DataFavorite> = ({ id, title, year, rating, md }) => {
   const { favorites, setFavorites } = useContext(contextGlobal)
+  const favoriteId = favorites?.findIndex((element: Data) => element.id === id)
+  const [isBookmarked, setIsBookmarked] = useState<boolean>(favoriteId !== -1)
 
   const handleAddFavorite = (id: number): void => {
     toast('Removed from favorites', {
@@ -23,12 +25,13 @@ const Mobile: FC<DataFavorite> = ({ id, title, year, rating, md }) => {
 
     const validateId = favorites?.findIndex((element: Data) => element.id === id)
     if (validateId === -1) {
-      const currentFavorites = [...favorites, { id, title, year, rating, md }]
-      setFavorites!(currentFavorites)
+      const currentFavorites = favorites !== undefined ? [...favorites, { id, title, year, rating, md }] : null
+      setFavorites(currentFavorites)
       localStorage.setItem('favoriteList', JSON.stringify(currentFavorites))
     } else {
       const removeFavorite = favorites?.filter((element: Data) => element.id !== id)
       setFavorites(removeFavorite)
+      setIsBookmarked(false)
       localStorage.setItem('favoriteList', JSON.stringify(removeFavorite))
     }
   }
@@ -48,7 +51,7 @@ const Mobile: FC<DataFavorite> = ({ id, title, year, rating, md }) => {
           </div>
         </div>
         <button className='card_bookmark' onClick={() => handleAddFavorite(id)}>
-          <LazyLoadImage src={Bookmark} alt="boomark" className='bookmark__card__image' />
+          <Bookmark isBookmarked={isBookmarked} />
         </button>
       </div>
     </div>
