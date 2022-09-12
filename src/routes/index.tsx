@@ -1,4 +1,3 @@
-import Footer from '@/components/footer'
 import GoTop from '@/components/gotop'
 import Header from '@/components/header'
 import Favorites from '@/layouts/Favorites'
@@ -37,7 +36,6 @@ const AppRoute: React.FC = () => {
             reverseOrder={false}
           />
         </div>
-        <Footer />
       </Router>
     </>
   )

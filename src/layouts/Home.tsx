@@ -1,5 +1,6 @@
 import Banner from '@/components/banner'
 import Card from '@/components/card'
+import Footer from '@/components/footer'
 import { State } from '@/types/data.type'
 import { useState } from 'react'
 
@@ -31,6 +32,8 @@ const Home = (): JSX.Element => {
         <h1 className='title__category__home'>Series</h1>
         <Card handleClick={handleClick} typeCategory='serie' />
       </section>
+
+      <Footer />
     </>
   )
 }
