@@ -15,7 +15,7 @@ const Card: React.FC<Props> = ({ handleClick, typeCategory }) => {
   return (
     <div className='card__container__grid'>
       {filterData.map((item) => (
-        <CardList handleClick={handleClick} {...item} />
+        <CardList handleClick={handleClick} {...item} key={item.id} />
       ))}
     </div>
   )

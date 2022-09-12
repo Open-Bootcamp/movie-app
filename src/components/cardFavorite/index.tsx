@@ -13,7 +13,7 @@ const CardFavorite: FC<Props> = ({ favorites }) => {
       <h1 className='title__category'>Favoritos</h1>
       {
         <div className='card__container__grid'>
-          {favorites.map((element) => <Mobile {...element} />)}
+          {favorites.map((element) => <Mobile {...element} key={element.id} />)}
         </div>
       }
     </div>

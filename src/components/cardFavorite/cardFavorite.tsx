@@ -20,13 +20,13 @@ const Mobile: FC<Data> = ({ id, title, year, rating, imageMd, isRecent }) => {
       }
     })
 
-    const validateId = favorites?.findIndex(element => element.id === id)
+    const validateId = favorites?.findIndex((element: Data) => element.id === id)
     if (validateId === -1) {
       const currentFavorites = [...favorites, { id, title, year, rating, imageMd }]
       setFavorites(currentFavorites)
       localStorage.setItem('favoriteList', JSON.stringify(currentFavorites))
     } else {
-      const removeFavorite = favorites?.filter(element => element.id !== id)
+      const removeFavorite = favorites?.filter((element: Data) => element.id !== id)
       setFavorites(removeFavorite)
       localStorage.setItem('favoriteList', JSON.stringify(removeFavorite))
     }
