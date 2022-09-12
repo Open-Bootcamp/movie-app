@@ -21,12 +21,9 @@
   filter: brightness(100%);
 }
 
-
 .go3958317564 {
   font-family: 'Poppins';
 }
-
-
 
 .title__category {
   font-family: 'Poppins';
@@ -56,6 +53,7 @@
 
 .container__category {
   margin-top: 68px;
+  padding-bottom: 68px;
 }
 
 .card__container__grid {
@@ -86,4 +84,17 @@ body {
     flex-direction: column;
     margin: 0 auto;
   }
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 60%;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $colorPrimary;
 }

@@ -6,11 +6,11 @@ import './styles.scss'
 const Mobile: FC = () => {
   return (
     <div className='header'>
-      <h1 className='logo'><Link to='/'>OPENWEEKAPPS</Link></h1>
+      <h1 className='logo' title='Go to home'><Link to='/'>OPENWEEKAPPS</Link></h1>
       <nav className='nav'>
         <ul className='nav__ul'>
           <li className='nav__item'>
-            <Link to='/peliculas'>Películas</Link>
+            <Link to='/peliculas'>Movites</Link>
           </li>
           <li className='nav__item'>
             <Link to='/series'>Series</Link>
