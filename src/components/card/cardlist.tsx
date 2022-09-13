@@ -60,7 +60,7 @@ const Mobile: FC<MobileProps> = ({ id, title, year, rating, images: { md, xl }, 
             <p className="card_rating-value">{rating}</p>
           </div>
         </div>
-        <button className='card_bookmark' onClick={() => handleAddFavorite(id)} title='Añadir a favoritos ✅'>
+        <button className='card_bookmark' onClick={() => handleAddFavorite(id)} title='Add to favorites ✅'>
           <Bookmark isBookmarked={isBookmarked} />
         </button>
       </div>

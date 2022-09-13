@@ -24,6 +24,16 @@
   text-align: center;
 }
 
+
+.txt_a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 .repo {
   background: #ff000080;
   padding: 2px 5px;
@@ -34,11 +44,13 @@
   gap: 5px;
   justify-content: center;
 
-  a {
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-weight: 500;
-  }
+
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 500;
 }

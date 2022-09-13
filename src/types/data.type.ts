@@ -48,3 +48,7 @@ export interface Breakpoints {
   laptop: number
   desktop: number
 }
+
+export interface SearchNotFoundProps {
+  name: string | undefined
+}
