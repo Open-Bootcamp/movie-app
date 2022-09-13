@@ -37,6 +37,7 @@ Este proyecto fue realizado con la participación de los integrantes de OpenBoot
 - Diseño Responsivo
 - Flex y Grid Layout
 - React
+- Typescript
 - SCSS
 
 ### Recursos Utilizados
