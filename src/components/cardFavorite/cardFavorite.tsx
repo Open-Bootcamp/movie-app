@@ -1,5 +1,5 @@
 import { contextGlobal } from '@/context/contextGlobal'
-import { Data, DataFavorite } from '@/types/data.type'
+import { Data } from '@/types/data.type'
 import { FC, useContext, useState } from 'react'
 import toast from 'react-hot-toast'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
@@ -7,7 +7,7 @@ import Star from '../../assets/star.svg'
 import { Bookmark } from '../bookmark/bookmark'
 import './styles.scss'
 
-const Mobile: FC<DataFavorite> = ({ id, title, year, rating, md }) => {
+const Mobile: FC<Data> = ({ id, title, year, rating, images: { md, lg, xl } }) => {
   const { favorites, setFavorites } = useContext(contextGlobal)
   const favoriteId = favorites?.findIndex((element: Data) => element.id === id)
   const [isBookmarked, setIsBookmarked] = useState<boolean>(favoriteId !== -1)
@@ -23,23 +23,16 @@ const Mobile: FC<DataFavorite> = ({ id, title, year, rating, md }) => {
       }
     })
 
-    const validateId = favorites?.findIndex((element: Data) => element.id === id)
-    if (validateId === -1) {
-      const currentFavorites = favorites !== undefined ? [...favorites, { id, title, year, rating, md }] : null
-      setFavorites(currentFavorites)
-      localStorage.setItem('favoriteList', JSON.stringify(currentFavorites))
-    } else {
-      const removeFavorite = favorites?.filter((element: Data) => element.id !== id)
-      setFavorites(removeFavorite)
-      setIsBookmarked(false)
-      localStorage.setItem('favoriteList', JSON.stringify(removeFavorite))
-    }
+    const removeFavorite = favorites?.filter((element: Data) => element.id !== id)
+    setFavorites(removeFavorite)
+    setIsBookmarked(false)
+    localStorage.setItem('favoriteList', JSON.stringify(removeFavorite))
   }
 
   return (
     <div className="container_card">
       <div className="card">
-        <LazyLoadImage src={md} alt={title} />
+        <LazyLoadImage src={lg} alt={title} />
         <div className="card_content">
           <div className="card_description">
             <h3 className="card_description-title">{title}</h3>

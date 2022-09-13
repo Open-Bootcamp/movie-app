@@ -7,7 +7,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Bookmark } from '../bookmark/bookmark'
 import './styles.scss'
 
-const Mobile: FC<MobileProps> = ({ id, title, year, rating, images: { md, xl }, description, handleClick }) => {
+const Mobile: FC<MobileProps> = ({ id, title, year, rating, images: { md, lg, xl }, description, handleClick }) => {
   const { favorites, setFavorites } = useContext(contextGlobal)
 
   const favoriteId = favorites?.findIndex((element: Data) => element.id === id)
@@ -25,7 +25,7 @@ const Mobile: FC<MobileProps> = ({ id, title, year, rating, images: { md, xl }, 
           backdropFilter: 'blur(10px)'
         }
       })
-      const currentFavorites = favorites !== undefined ? [...favorites, { id, title, year, rating, md }] : null
+      const currentFavorites = favorites !== undefined ? [...favorites, { id, title, year, rating, images: { md, lg, xl } }] : null
       setFavorites(currentFavorites)
       setIsBookmarked(true)
       localStorage.setItem('favoriteList', JSON.stringify(currentFavorites))
@@ -47,9 +47,9 @@ const Mobile: FC<MobileProps> = ({ id, title, year, rating, images: { md, xl }, 
   }
 
   return (
-    <div className="container_card" onClick={(): void => handleClick!({ title, xl, description })} title='Display in banner 🤓'>
+    <div className="container_card" onClick={(): void => handleClick ? handleClick({ title, xl, description }) : {}} title='Display in banner 🤓'>
       <div className="card">
-        <LazyLoadImage src={md} alt={title} />
+        <LazyLoadImage src={lg} alt={title} />
         <div className="card_content">
           <div className="card_description">
             <h3 className="card_description-title">{title}</h3>
