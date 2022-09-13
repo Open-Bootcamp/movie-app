@@ -6,9 +6,9 @@ interface ContextGlobalProps{
 }
 
 interface ContextGlobalInterface {
-  favorites?: Data[]
-  setFavorites?: React.Dispatch<React.SetStateAction<Data[]>>
-  dataAPI?: Data[]
+  favorites: Data[]
+  setFavorites: React.Dispatch<React.SetStateAction<Data[]>>
+  dataAPI: Data[]
 }
 
 // CONTEXT GLOBAL

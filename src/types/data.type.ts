@@ -24,7 +24,7 @@ export interface Data {
 
 export interface DataFavorite {
   id: number
-  md: string
+  images: Images
   title: string
   description: string
   category: string

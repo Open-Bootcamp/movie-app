@@ -5,7 +5,7 @@ import { useContext, useEffect } from 'react'
 
 const Favorites = (): JSX.Element => {
   const { favorites, setFavorites } = useContext(contextGlobal)
-  const recoveryData = localStorage.getItem('favoriteList') !== null ? JSON.parse(localStorage.getItem('favoriteList')) : null
+  const recoveryData = localStorage.getItem('favoriteList') !== null ? JSON.parse(localStorage.getItem('favoriteList')) : []
 
   useEffect(() => {
     setFavorites!(recoveryData)
@@ -14,7 +14,7 @@ const Favorites = (): JSX.Element => {
   return (
     <>
       {
-        favorites?.length > 0 ? <CardFavorite favorites={favorites} /> : <FavoriteNotFound />
+        favorites!.length > 0 ? <CardFavorite favorites={favorites!} /> : <FavoriteNotFound />
       }
     </>
   )
