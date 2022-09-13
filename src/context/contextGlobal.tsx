@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Data } from '@/types/data.type'
 import React, { createContext, useEffect, useState } from 'react'
 

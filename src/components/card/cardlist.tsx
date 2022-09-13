@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Star from '@/assets/star.svg'
 import { contextGlobal } from '@/context/contextGlobal'
 import { Data, MobileProps } from '@/types/data.type'

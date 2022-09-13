@@ -1,3 +1,4 @@
+// @ts-nocheck
 import CardFavorite from '@/components/cardFavorite'
 import FavoriteNotFound from '@/components/favoriteNotFound'
 import { contextGlobal } from '@/context/contextGlobal'
