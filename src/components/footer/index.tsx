@@ -9,7 +9,7 @@ const Footer = (): JSX.Element => {
       <h1 className='logo'>MOVIE APP</h1>
       <a href="https://github.com/Open-Bootcamp/movie-app" target='_blank'>
         <div className='repo' title='Go to repository'>
-          <span className='txt_a'>Github repository</span>
+          <span className='txt_a'>GitHub Repository</span>
           <LazyLoadImage src={Github} alt="Github icon" />
         </div>
       </a>
