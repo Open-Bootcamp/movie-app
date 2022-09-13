@@ -31,7 +31,6 @@
   top: 0;
   right: 0;
   width: 100%;
-  object-fit: cover;
   z-index: -1;
   height: 620px;
 
@@ -39,5 +38,6 @@
     width: 100%;
     filter: brightness(0.5);
     height: 620px;
+    object-fit: cover;
   }
 }

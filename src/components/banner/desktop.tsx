@@ -9,8 +9,9 @@ const Desktop: FC<BannerProps> = ({ xl, title, description }): JSX.Element => {
         <h1 className='banner__title'>{title}</h1>
         <p className='banner__description'>{description}</p>
       </div>
-
-      <LazyLoadImage src={xl} alt={title} className='banner__img' />
+      <div className='banner__img'>
+        <LazyLoadImage src={xl} alt={title} />
+      </div>
 
     </div>
   )
