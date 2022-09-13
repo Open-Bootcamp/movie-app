@@ -1,6 +1,5 @@
 import { BannerProps } from '@/types/data.type'
 import { FC } from 'react'
-
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const Desktop: FC<BannerProps> = ({ xl, title, description }): JSX.Element => {
@@ -10,9 +9,8 @@ const Desktop: FC<BannerProps> = ({ xl, title, description }): JSX.Element => {
         <h1 className='banner__title'>{title}</h1>
         <p className='banner__description'>{description}</p>
       </div>
-      <div className='banner__img'>
-        <LazyLoadImage src={xl} alt={title} />
-      </div>
+
+      <LazyLoadImage src={xl} alt={title} className='banner__img' />
 
     </div>
   )
