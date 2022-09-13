@@ -20,6 +20,7 @@ export interface Data {
   year: number
   rating: number
   isRecent: boolean
+  is_trending: boolean
 }
 
 export interface DataFavorite {

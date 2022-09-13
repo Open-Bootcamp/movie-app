@@ -12,8 +12,18 @@ interface Props {
 const Card: React.FC<Props> = ({ handleClick, typeCategory }) => {
   const { dataAPI } = useContext(contextGlobal)
 
-  const filterData = dataAPI?.filter((item) => item.category === typeCategory)
+  if (typeCategory === 'trending') {
+    const filterData = dataAPI?.filter((item) => item.is_trending)
+    return (
+      <div className='card__container__grid'>
+      {filterData?.map((item) => (
+        <CardList handleClick={handleClick} {...item} key={item.id} />
+      ))}
+    </div>
+    )
+  }
 
+  const filterData = dataAPI?.filter((item) => item.category === typeCategory)
   return (
     <div className='card__container__grid'>
       {filterData?.map((item) => (
