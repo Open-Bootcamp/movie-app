@@ -1,35 +1,55 @@
+# MOVIE APP
 
-# Movie App
+## Tabla de Contenidos
 
-Aplicación web de películas y series 😁
+- [MOVIE APP](#movie-app)
+  - [Tabla de Contenidos](#tabla-de-contenidos)
+  - [Preview](#preview)
+    - [Screenshot](#screenshot)
+  - [Proyecto](#proyecto)
+    - [Links](#links)
+  - [Proceso](#proceso)
+    - [Construido con:](#construido-con)
+    - [Recursos Utilizados](#recursos-utilizados)
+  - [Autores](#autores)
+    - [OpenBootcamp Community](#openbootcamp-community)
 
-![image](https://user-images.githubusercontent.com/43556246/189501042-5cc429ff-bcc3-4cbe-b882-38e5ee429f38.png)
+## Preview
 
-## Tech Stack
+### Screenshot
 
-**Frontend:** React, Typescript, Scss
+![](./public/preview.png)
 
-## Installation and run app
+## Proyecto
 
-Install Movie App 
+Este proyecto fue realizado con la participación de los integrantes de OpenBootcamp, y es parte de una dinámica llamada "OpenWeekapps"
 
-```bash
-  $ git clone https://github.com/Open-Bootcamp/movie-app.git & cd movie-app
-```
-    
-```bash
-  $ npm install
-```
+### Links
 
-How to run the application
+- Repositorio: [Solución](https://github.com/Open-Bootcamp/movie-app)
+- Preview: [Live App]()
 
-```bash
-  $ npm run dev
-```
+## Proceso
 
+### Construido con:
 
-## Authors
+- Mobile-first
+- Diseño Responsivo
+- Flex y Grid Layout
+- React
+- SCSS
 
-- [@MaxC0d3](https://www.github.com/MaxC0d3)
-- [@lemartinezm](https://www.github.com/lemartinezm)
-- [@JoseCaicedoDev](https://www.github.com/JoseCaicedoDev)
+### Recursos Utilizados
+
+- [React Docs](https://beta.reactjs.org/)
+- [MDN Web Docs](https://developer.mozilla.org/es/docs/Web)
+- [SASS/SCSS](https://sass-lang.com/)
+
+## Autores
+
+### OpenBootcamp Community
+
+- GitHub - [@MaxC0d3](https://www.github.com/MaxC0d3)
+- GitHub - [@JoseCaicedoDev](https://www.github.com/JoseCaicedoDev)
+- GitHub - [@lemartinezm](https://www.github.com/lemartinezm)
+

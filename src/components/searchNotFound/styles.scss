@@ -5,14 +5,13 @@
   display: grid;
   place-content: center;
   min-height: 90vh;
-  margin-top: 30px;
+  margin-top: 0 !important;
 
   &_notFound {
     font-family: 'Poppins';
 
     & > h1 {
       color: $colorSecundary;
-      margin-top: 39px;
       font-weight: 800;
       font-size: 39px;
       line-height: 58px;

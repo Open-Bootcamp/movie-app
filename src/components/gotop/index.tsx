@@ -11,8 +11,8 @@ const GoTop = (): JSX.Element => {
       {scrolled === true
         ? (
         <div className='go-top' onClick={handleScroll}>
-          <button title='Ir al inicio  🔝' aria-label='Ir al inicio  🔝'>
-            <LazyLoadImage src={GoUp} alt='Ir al inicio' />
+          <button title='Go to top  🔝' aria-label='Go to top  🔝'>
+            <LazyLoadImage src={GoUp} alt='Go to top icon' />
           </button>
         </div>
           )

@@ -6,7 +6,8 @@ import Movies from '@/layouts/Movies'
 import Search from '@/layouts/Search'
 import Series from '@/layouts/Series'
 import Trending from '@/layouts/Trending'
-import React from 'react'
+import { FC } from 'react'
+import { Toaster } from 'react-hot-toast'
 import {
   BrowserRouter as Router,
   Navigate,
@@ -14,7 +15,7 @@ import {
   Routes
 } from 'react-router-dom'
 
-const AppRoute: React.FC = () => {
+const AppRoute: FC = () => {
   return (
     <>
       <Router>
@@ -30,6 +31,10 @@ const AppRoute: React.FC = () => {
             <Route path='/series' element={<Series />} />
             <Route path='/trending' element={<Trending />} />
           </Routes>
+          <Toaster
+            position="bottom-center"
+            reverseOrder={false}
+          />
         </div>
       </Router>
     </>

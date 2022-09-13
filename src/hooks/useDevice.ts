@@ -1,15 +1,10 @@
+import { Breakpoints } from '@/types/data.type'
 import { useEffect, useState } from 'react'
 
 export const sizes = {
   tablet: 768,
   laptop: 1024,
   desktop: 1170
-}
-
-interface Breakpoints {
-  tablet: number
-  laptop: number
-  desktop: number
 }
 
 export function useDevice (breakpoints: Breakpoints = sizes): any {
