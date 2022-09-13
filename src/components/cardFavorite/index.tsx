@@ -8,7 +8,6 @@ interface Props{
 }
 
 const CardFavorite: FC<Props> = ({ favorites }) => {
-  console.log(favorites)
   return (
     <div className='container__category'>
       <h1 className='title__category'>Favorites</h1>
